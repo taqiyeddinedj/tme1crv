@@ -7,7 +7,7 @@ WORKDIR /app
 
 # Copy package files and install dependencies
 COPY package*.json ./
-RUN yarn install
+RUN npm install
 
 # Copy application source code
 COPY . .
